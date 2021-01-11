@@ -49,6 +49,16 @@ object UtilsLibraries {
     const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Version.leak_canary}"
 }
 
+object AnalysisCode {
+    object AnalysisCodeVersions {
+        const val ktlint_gradle_version = "8.2.0"
+        const val ktlint_version = "0.36.0"
+    }
+
+    const val ktlinGradle = "org.jlleitschuh.gradle.ktlint"
+    const val ktlint = "org.jlleitschuh.gradle.ktlint"
+}
+
 object Testing {
 
     object Version {
