@@ -48,6 +48,9 @@ dependencies {
     implementation(UIPlugin.constraintLayoutPlugin)
     implementation(UIPlugin.materialPlugin)
 
+    // Utils Libraries
+    implementation(UtilsLibraries.leakCanary)
+
     // Testing Libraries
     testImplementation(Testing.junit)
     androidTestImplementation(Testing.testJunit)

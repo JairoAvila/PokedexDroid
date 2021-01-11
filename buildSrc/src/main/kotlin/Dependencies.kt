@@ -40,6 +40,15 @@ object UIPlugin {
 
 }
 
+object UtilsLibraries {
+
+    private object Version {
+        const val leak_canary = "2.3"
+    }
+
+    const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Version.leak_canary}"
+}
+
 object Testing {
 
     object Version {
