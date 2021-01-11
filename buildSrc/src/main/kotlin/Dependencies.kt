@@ -28,6 +28,17 @@ object AndroidSupport {
 
 }
 
+object ArchComponentsLibraries {
+
+    object Version {
+        const val room_version = "2.2.6"
+    }
+
+    const val roomRuntime =  "androidx.room:room-ktx:${Version.room_version}"
+    const val roomCompiler =  "androidx.room:room-compiler:${Version.room_version}"
+
+}
+
 object UIPlugin {
 
     object Version {
