@@ -53,14 +53,6 @@ dependencies {
     // Architecture Components Libraries
     implementation(ArchComponentsLibraries.hiltRuntime)
     kapt(ArchComponentsLibraries.hiltCompiler)
-    implementation(ArchComponentsLibraries.roomRuntime)
-    kapt(ArchComponentsLibraries.roomCompiler)
-
-    // Network Library
-    implementation(NetworkLibraries.retrofit)
-    implementation(NetworkLibraries.okhttp)
-    implementation(NetworkLibraries.loggingInterceptor)
-    implementation(NetworkLibraries.gsonConverter)
 
     // Utils Libraries
     implementation(UtilsLibraries.leakCanary)
@@ -77,4 +69,6 @@ dependencies {
     testImplementation(Testing.coroutinesTesting)
     androidTestImplementation(Testing.coreTesting)
     androidTestImplementation(Testing.coroutinesTesting)
+
+    implementation(project(mapOf("path" to ":core")))
 }
