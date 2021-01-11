@@ -9,9 +9,9 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath (AndroidPlugins.gradlePlugin)
-        classpath (AndroidPlugins.kotlinPlugin)
-        classpath (AndroidPlugins.hiltPlugin)
+        classpath(AndroidPlugins.gradlePlugin)
+        classpath(AndroidPlugins.kotlinPlugin)
+        classpath(AndroidPlugins.hiltPlugin)
     }
 }
 
