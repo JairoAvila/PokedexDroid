@@ -40,19 +40,34 @@ object UIPlugin {
 
 }
 
-object UtilsLibraries {
+object NetworkLibraries {
 
     private object Version {
-        const val leak_canary = "2.3"
+        const val retrofit_version = "2.9.0"
+        const val okhttp_version = "4.7.2"
+    }
+
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Version.retrofit_version}"
+    const val okhttp = "com.squareup.okhttp3:okhttp:${Version.okhttp_version}"
+    const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Version.okhttp_version}"
+    const val gsonConverter ="com.squareup.retrofit2:converter-gson:${Version.retrofit_version}"
+}
+
+object UtilsLibraries {
+
+    object Version {
+        const val leak_canary = "2.5"
+        const val dependencies_update_analyze_version = "0.36.0"
     }
 
     const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Version.leak_canary}"
+    const val dependenciesUpdateAnalyze = "com.github.ben-manes.versions"
 }
 
 object AnalysisCode {
     object AnalysisCodeVersions {
-        const val ktlint_gradle_version = "8.2.0"
-        const val ktlint_version = "0.36.0"
+        const val ktlint_gradle_version = "9.4.1"
+        const val ktlint_version = "0.40.0"
     }
 
     const val ktlinGradle = "org.jlleitschuh.gradle.ktlint"
