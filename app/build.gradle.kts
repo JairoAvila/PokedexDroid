@@ -66,4 +66,12 @@ dependencies {
     testImplementation(Testing.junit)
     androidTestImplementation(Testing.testJunit)
     androidTestImplementation(Testing.testEspresso)
+
+    testImplementation(Testing.mockitoCore)
+    testImplementation(Testing.mockitoInline)
+    testImplementation(Testing.expekt) { exclude(group = "org.jetbrains.kotlin") }
+    testImplementation(Testing.coreTesting)
+    testImplementation(Testing.coroutinesTesting)
+    androidTestImplementation(Testing.coreTesting)
+    androidTestImplementation(Testing.coroutinesTesting)
 }
