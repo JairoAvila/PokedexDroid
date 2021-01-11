@@ -4,6 +4,7 @@ plugins {
 }
 
 buildscript {
+    val kotlin_version by extra("1.4.21")
     repositories {
         google()
         jcenter()
@@ -12,6 +13,7 @@ buildscript {
         classpath(AndroidPlugins.gradlePlugin)
         classpath(AndroidPlugins.kotlinPlugin)
         classpath(AndroidPlugins.hiltPlugin)
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
     }
 }
 
