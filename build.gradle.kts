@@ -1,5 +1,6 @@
 plugins {
     id(AnalysisCode.ktlinGradle) version AnalysisCode.AnalysisCodeVersions.ktlint_gradle_version
+    id(UtilsLibraries.dependenciesUpdateAnalyze) version UtilsLibraries.Version.dependencies_update_analyze_version
 }
 
 buildscript {
@@ -29,12 +30,6 @@ subprojects {
         verbose.set(true)
         android.set(false)
         outputToConsole.set(true)
-        reporters.set(
-            setOf(
-                org.jlleitschuh.gradle.ktlint.reporter.ReporterType.PLAIN,
-                org.jlleitschuh.gradle.ktlint.reporter.ReporterType.CHECKSTYLE
-            )
-        )
         ignoreFailures.set(true)
         kotlinScriptAdditionalPaths {
             include(fileTree("scripts/"))

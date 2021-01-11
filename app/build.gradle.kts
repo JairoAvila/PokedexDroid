@@ -48,6 +48,12 @@ dependencies {
     implementation(UIPlugin.constraintLayoutPlugin)
     implementation(UIPlugin.materialPlugin)
 
+    // Network Library
+    implementation(NetworkLibraries.retrofit)
+    implementation(NetworkLibraries.okhttp)
+    implementation(NetworkLibraries.loggingInterceptor)
+    implementation(NetworkLibraries.gsonConverter)
+
     // Utils Libraries
     implementation(UtilsLibraries.leakCanary)
 
