@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("dagger.hilt.android.plugin")
     kotlin("android")
     kotlin("kapt")
 }
@@ -50,6 +51,8 @@ dependencies {
     implementation(UIPlugin.materialPlugin)
 
     // Architecture Components Libraries
+    implementation(ArchComponentsLibraries.hiltRuntime)
+    kapt(ArchComponentsLibraries.hiltCompiler)
     implementation(ArchComponentsLibraries.roomRuntime)
     kapt(ArchComponentsLibraries.roomCompiler)
 
