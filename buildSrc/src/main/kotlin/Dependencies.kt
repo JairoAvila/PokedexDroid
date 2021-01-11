@@ -9,11 +9,13 @@ object AndroidPlugins {
     object Version {
         const val kotlinVersion = "1.4.20"
         const val gradleVersion = "4.1.1"
+        const val hiltVersion = "2.28-alpha"
     }
 
     const val kotlinPlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.kotlinVersion}"
     const val gradlePlugin = "com.android.tools.build:gradle:${Version.gradleVersion}"
     const val kotlinStdLibPlugin = "org.jetbrains.kotlin:kotlin-stdlib:${Version.kotlinVersion}"
+    const val hiltPlugin = "com.google.dagger:hilt-android-gradle-plugin:${Version.hiltVersion}"
 }
 
 object AndroidSupport {
@@ -32,10 +34,13 @@ object ArchComponentsLibraries {
 
     object Version {
         const val room_version = "2.2.6"
+        const val hilt_version = "2.28-alpha"
     }
 
     const val roomRuntime =  "androidx.room:room-ktx:${Version.room_version}"
     const val roomCompiler =  "androidx.room:room-compiler:${Version.room_version}"
+    const val hiltRuntime = "com.google.dagger:hilt-android:${Version.hilt_version}"
+    const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Version.hilt_version}"
 
 }
 

@@ -11,6 +11,7 @@ buildscript {
     dependencies {
         classpath (AndroidPlugins.gradlePlugin)
         classpath (AndroidPlugins.kotlinPlugin)
+        classpath (AndroidPlugins.hiltPlugin)
     }
 }
 
