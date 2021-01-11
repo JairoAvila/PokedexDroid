@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    kotlin("kapt")
 }
 
 android {
@@ -47,6 +48,10 @@ dependencies {
     // UI Libraries
     implementation(UIPlugin.constraintLayoutPlugin)
     implementation(UIPlugin.materialPlugin)
+
+    // Architecture Components Libraries
+    implementation(ArchComponentsLibraries.roomRuntime)
+    kapt(ArchComponentsLibraries.roomCompiler)
 
     // Network Library
     implementation(NetworkLibraries.retrofit)
