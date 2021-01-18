@@ -9,5 +9,4 @@ class PokedexApp : Application() {
     override fun onCreate() {
         super.onCreate()
     }
-
 }

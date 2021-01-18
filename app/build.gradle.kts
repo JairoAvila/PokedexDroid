@@ -37,6 +37,12 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    dynamicFeatures = mutableSetOf(":dashboard", ":login")
 }
 
 dependencies {
@@ -47,10 +53,13 @@ dependencies {
     implementation(AndroidSupport.appcompatPlugin)
 
     // UI Libraries
-    implementation(UIPlugin.constraintLayoutPlugin)
+    api(UIPlugin.constraintLayoutPlugin)
     implementation(UIPlugin.materialPlugin)
 
     // Architecture Components Libraries
+    api(ArchComponentsLibraries.navigationFragment)
+    api(ArchComponentsLibraries.navigationUI)
+    api(ArchComponentsLibraries.navigationFeatureModule)
     implementation(ArchComponentsLibraries.hiltRuntime)
     kapt(ArchComponentsLibraries.hiltCompiler)
 

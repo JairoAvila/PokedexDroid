@@ -23,6 +23,8 @@ dependencies {
     api(ArchComponentsLibraries.roomRuntime)
     kapt(ArchComponentsLibraries.roomCompiler)
 
+    testImplementation(Testing.junit)
+    androidTestImplementation(Testing.testJunit)
 
     implementation(project(mapOf("path" to ":common")))
 }

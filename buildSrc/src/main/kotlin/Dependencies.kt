@@ -33,10 +33,14 @@ object AndroidSupport {
 object ArchComponentsLibraries {
 
     object Version {
+        const val nav_version = "2.3.2"
         const val room_version = "2.2.6"
         const val hilt_version = "2.28-alpha"
     }
 
+    const val navigationFragment =  "androidx.navigation:navigation-fragment-ktx:${Version.nav_version}"
+    const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Version.nav_version}"
+    const val navigationFeatureModule = "androidx.navigation:navigation-dynamic-features-fragment:${Version.nav_version}"
     const val roomRuntime =  "androidx.room:room-ktx:${Version.room_version}"
     const val roomCompiler =  "androidx.room:room-compiler:${Version.room_version}"
     const val hiltRuntime = "com.google.dagger:hilt-android:${Version.hilt_version}"
