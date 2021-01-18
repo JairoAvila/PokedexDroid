@@ -9,4 +9,7 @@ android {
 
 dependencies {
     implementation(AndroidPlugins.kotlinStdLibPlugin)
+
+    testImplementation(Testing.junit)
+    androidTestImplementation(Testing.testJunit)
 }
