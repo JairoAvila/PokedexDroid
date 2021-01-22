@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/login_nav_graph">
+
+    <include-dynamic
+        android:id="@+id/login_nav_graph"
+        app:moduleName="@string/title_login"
+        app:graphResName="login_nav_graph"
+        app:graphPackage="com.jairoavila.pokedex.login" />
+
+    <include-dynamic
+        android:id="@+id/dashboard_nav_graph"
+        app:moduleName="@string/title_dashboard"
+        app:graphResName="dashboard_nav_graph"
+        app:graphPackage="com.jairoavila.pokedex.dashboard" />
+
+    <action
+        android:id="@+id/action_global_login_nav_graph"
+        app:destination="@id/login_nav_graph"
+        app:popUpTo="@id/main_nav_graph" />
+
+    <action
+        android:id="@+id/action_global_dashboard_nav_graph"
+        app:destination="@id/dashboard_nav_graph"
+        app:popUpTo="@id/main_nav_graph" />
+
+</navigation>

@@ -3,6 +3,7 @@ plugins {
     id("dagger.hilt.android.plugin")
     kotlin("android")
     kotlin("kapt")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -42,7 +43,7 @@ android {
         viewBinding = true
     }
 
-    dynamicFeatures = mutableSetOf(":dashboard", ":login")
+    dynamicFeatures = mutableSetOf(":login", ":dashboard")
 }
 
 dependencies {

@@ -7,7 +7,7 @@ object AndroidSdk {
 object AndroidPlugins {
 
     object Version {
-        const val kotlinVersion = "1.4.20"
+        const val kotlinVersion = "1.4.21"
         const val gradleVersion = "4.1.1"
         const val hiltVersion = "2.28-alpha"
     }
@@ -33,7 +33,7 @@ object AndroidSupport {
 object ArchComponentsLibraries {
 
     object Version {
-        const val nav_version = "2.3.2"
+        const val nav_version = "2.3.1"
         const val room_version = "2.2.6"
         const val hilt_version = "2.28-alpha"
     }
